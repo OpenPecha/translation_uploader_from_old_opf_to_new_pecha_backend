@@ -11,7 +11,7 @@ async def download_opf(pecha_id: str):
     async with httpx.AsyncClient(follow_redirects=True, timeout=None) as client:
         async with client.stream("GET", f"{OPF_DOWNLOAD_URL}/{pecha_id}") as r:
             r.raise_for_status()
-            out_path = f"{pecha_id}.zip"
+            out_path = f"temp_opf/{pecha_id}.zip"
             with open(out_path, "wb") as f:
                 async for chunk in r.aiter_bytes():
                     if chunk:

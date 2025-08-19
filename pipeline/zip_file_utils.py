@@ -6,11 +6,11 @@ def is_zip_present(pecha_id: str) -> bool:
     """
     Check if a zip file with the name of the pecha_id exists in the current directory.
     """
-    return os.path.isfile(f"{pecha_id}.zip")
+    return os.path.isfile(f"temp_opf/{pecha_id}.zip")
 
 async def unzip_pecha(pecha_id: str):
-    zip_path = f"{pecha_id}.zip"
-    extract_dir = pecha_id
+    zip_path = f"temp_opf/{pecha_id}.zip"
+    extract_dir = f"temp_opf/{pecha_id}"
 
     if os.path.exists(zip_path):
         def _unzip():
