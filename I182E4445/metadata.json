@@ -1,0 +1,48 @@
+{
+  "id": "I9AE010C6",
+  "title": {
+    "bo": "ཤེས་རབ་ཀྱི་ཕ་རོལ་ཏུ་ཕྱིན་པའི་སྙིང་པོ།",
+    "en": "The Heart of the Perfection of Wisdom",
+    "lzh": "般若波罗蜜多心经",
+    "sa": "प्रज्ञापारमिताहृदय"
+  },
+  "author": {
+    "sa": "बुद्ध"
+  },
+  "imported": "2025-05-21T04:15:41.189024",
+  "source": "OpenPecha",
+  "toolkit_version": "2.1.12",
+  "parser": "DocxRootParser",
+  "initial_creation_type": "google_docx",
+  "language": "sa",
+  "source_metadata": {
+    "date": null,
+    "source_url": null,
+    "source_type": null,
+    "document_id": "1PDtR6wX987NkpHL86t3onLwokdqcJnHCaDjiX2hIWZo",
+    "presentation": null,
+    "usage_title": null,
+    "long_title": {
+      "sa": "प्रज्ञापारमिताहृदय"
+    },
+    "alt_titles": null,
+    "commentary_of": null,
+    "version_of": null,
+    "translation_of": "I999EDD0C",
+    "category": null,
+    "bdrc": null
+  },
+  "bases": {},
+  "copyright": {
+    "status": "Unknown",
+    "notice": "",
+    "info_url": null
+  },
+  "licence": "Unknown",
+  "legacy_id": null,
+  "source_file": null,
+  "ocr_import_info": null,
+  "statistics": null,
+  "quality": null,
+  "last_modified": "2025-05-21T04:15:41.189020"
+}

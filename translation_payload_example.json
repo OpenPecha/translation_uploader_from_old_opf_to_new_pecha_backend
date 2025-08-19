@@ -1,0 +1,17 @@
+{
+    "language": "en",
+    "content": "AI generated translation...",
+    "title": "AI Translation",
+    "translator": {
+      "ai": {
+        "model": "GPT-4",
+        "workflow": "translation",
+        "prompt_id": "translate-v1"
+      }
+    },
+    "annotation": {
+      "id": "ai-annotation-001",
+      "type": "alignment",
+      "aligned_to": "source-annotation-id"
+    }
+  }
