@@ -73,21 +73,29 @@ async def _remove_unwanted_annotation_(pecha_id: str, dir_name: str, keep: str) 
 
     await asyncio.to_thread(_remove_files_except_keep)
 
-async def _download_and_preprocess_pecha_root_and_translation_(translation_text: dict):
+async def _download_and_preprocess_pecha_root_and_translation_(translation_text: dict) -> bool:
     translation_text_id = translation_text['id']
     root_text_id = translation_text['translation_of']
     
 
     if (not await download_opf(pecha_id=translation_text_id, dir_name="translation_opf")):
-        return
+        return False
     if (not await download_opf(pecha_id=root_text_id, dir_name="original_opf")):
-        return
+        return False
     
     await unzip_pecha(pecha_id=root_text_id, dir_name="original_opf")
 
     translation_annotation_detail = await get_annotation_details(pecha_id=translation_text_id)
 
+    aligned_to = translation_annotation_detail.get('aligned_to', '')
+    # Check if the aligned_to value contains 'alignment'
+    if 'alignment' not in aligned_to:
+        print(f"aligned_to is not an alignment: {aligned_to}. Stopping the process.")
+        return False
+
     await _remove_unwanted_annotation_(pecha_id=root_text_id, dir_name="original_opf", keep=translation_annotation_detail['aligned_to'])
+
+    return True
 
 def write_json_file(path: str, data: dict) -> None:
     with open(path, "w", encoding="utf-8") as f:
@@ -108,14 +116,20 @@ def _generate_translation_model_(translation_language: str, translation_base_tex
         translation_annotation="translation annotation"
     )
     
-async def get_translation_payloads(related_transation_text: List[dict]) -> List[TranslationPayload]:
+async def get_translation_payloads(related_transation_text: List[dict], root_text_id: str) -> List[TranslationPayload]:
     translation_payloads: List[TranslationPayload] = []
     for translation_text in related_transation_text:
-       
+        if translation_text['id'] == root_text_id:
+            print("Skipping the root text")
+            continue
+        
         translation_text_id = translation_text['id']
         translation_text_metadata = await get_text_metadata(text_id=translation_text_id)
 
-        await _download_and_preprocess_pecha_root_and_translation_(translation_text=translation_text)
+        root_text_id = translation_text['translation_of']
+
+        if not await _download_and_preprocess_pecha_root_and_translation_(translation_text=translation_text):
+            continue
         
         translation_base_text = await get_opf_base_text(pecha_id=translation_text_id, dir_name="translation_opf") 
 
@@ -126,13 +140,17 @@ async def get_translation_payloads(related_transation_text: List[dict]) -> List[
         translation_pyaload = _generate_translation_model_(translation_language=translation_language, translation_base_text=translation_base_text, translation_text_metadata=translation_text_metadata)
         
         translation_payloads.append(translation_pyaload)
-        break
 
-        delete_zip_file(pecha_id=translation_text_id)
-        delete_extracted_folder(pecha_id=translation_text_id)
+
+        delete_zip_file(pecha_id=translation_text_id, dir_name="translation_opf")
+        delete_zip_file(pecha_id=root_text_id, dir_name="original_opf")
+        delete_extracted_folder(pecha_id=translation_text_id, dir_name="translation_opf")
+        delete_extracted_folder(pecha_id=root_text_id, dir_name="original_opf")
+
         await asyncio.sleep(2)
 
         print('Done for ', translation_text_id)
+        print("\n\n")
 
     return translation_payloads
 
@@ -144,9 +162,10 @@ async def generate_translation_payload():
 
     related_transation_text = await get_related_translation_texts(text_id=root_text_id)
 
-    translation_payloads = await get_translation_payloads(related_transation_text=related_transation_text)
+    translation_payloads = await get_translation_payloads(related_transation_text=related_transation_text, root_text_id=root_text_id)
 
-    print("Translation payloads: \n", translation_payloads)
+    # print("Translation payloads: \n", translation_payloads)
+    print(len(translation_payloads))
 
 if __name__ == "__main__":
     asyncio.run(generate_translation_payload())
