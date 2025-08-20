@@ -8,6 +8,7 @@ OPF_DOWNLOAD_URL = get_constant("OPF_DOWNLOAD_URL")
 
 
 async def download_opf(pecha_id: str):
+    print("Downloading OPF for pecha id: ", pecha_id)
     async with httpx.AsyncClient(follow_redirects=True, timeout=None) as client:
         async with client.stream("GET", f"{OPF_DOWNLOAD_URL}/{pecha_id}") as r:
             r.raise_for_status()

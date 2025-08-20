@@ -56,15 +56,15 @@ async def generate_translation_payload():
                     workflow="translation",
                     prompt_id="translate-v1"
                 )
-            )
+            ),
+            original_annotation="original annotation",
+            translation_annotation="translation annotation"
         )
 
         delete_zip_file(pecha_id=translation_text_id)
         delete_extracted_folder(pecha_id=translation_text_id)
 
         await asyncio.sleep(2)
-
-        return
 
         print('Done for ', translation_text_id)
 

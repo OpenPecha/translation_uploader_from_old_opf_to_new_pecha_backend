@@ -4,9 +4,12 @@ from constant import get_constant
 OPEN_PECHA_BACKEND_URL = get_constant("OPEN_PECHA_BACKEND_URL")
 
 async def get_root_text_id(text_id: str):
+    print("Getting root text")
     async with httpx.AsyncClient() as client:
         response = await client.get(f"{OPEN_PECHA_BACKEND_URL}/metadata/{text_id}/related?traversal=full_tree&relationships=version")
         response = response.json()
+        print("Root text fetched successfully")
+        print(f"Root text: {response}")
         root_text_id = _get_root_text_id_from_response_(response=response)
         if not root_text_id:
             return None
@@ -23,15 +26,21 @@ def _get_root_text_id_from_response_(response: dict) -> str | None:
     return None
 
 async def get_related_translation_texts(text_id: str):
+    print("Getting related translation texts")
     async with httpx.AsyncClient() as client:
         response = await client.get(f"{OPEN_PECHA_BACKEND_URL}/metadata/{text_id}/related?traversal=full_tree&relationships=translation")
         response = response.json()
+        print("Related translation texts fetched successfully")
+        print(f"Related translation texts: {response}")
         return response
 
 async def get_text_metadata(text_id: str):
+    print("Getting text metadata for text id: ", text_id)
     async with httpx.AsyncClient() as client:
         response = await client.get(f"{OPEN_PECHA_BACKEND_URL}/metadata/{text_id}")
         response = response.json()
+        print("Text metadata fetched successfully")
+        print(f"Text metadata: {response}")
         return response
     
 async def _get_pecha_annotation_(pecha_id: str):
