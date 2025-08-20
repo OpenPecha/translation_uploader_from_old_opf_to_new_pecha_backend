@@ -1,6 +1,7 @@
 import os
 import zipfile
 import asyncio
+import shutil
 
 def is_zip_present(pecha_id: str) -> bool:
     """
@@ -22,9 +23,24 @@ async def unzip_pecha(pecha_id: str):
         print(f"Zip file {zip_path} does not exist.")
 
 def delete_zip_file(pecha_id: str):
-    zip_path = f"{pecha_id}.zip"
+    
+    zip_path = f"temp_opf/{pecha_id}.zip"
+    
+
+    # Delete zip file
     if os.path.exists(zip_path):
         os.remove(zip_path)
         print(f"Deleted {zip_path}")
     else:
         print(f"Zip file {zip_path} does not exist.")
+
+    
+
+def delete_extracted_folder(pecha_id: str):
+    folder_path = f"temp_opf/{pecha_id}"
+    # Delete extracted folder
+    if os.path.exists(folder_path):
+        shutil.rmtree(folder_path)
+        print(f"Deleted folder {folder_path}")
+    else:
+        print(f"Folder {folder_path} does not exist.")
