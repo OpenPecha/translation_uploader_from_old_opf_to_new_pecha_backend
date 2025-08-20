@@ -3,15 +3,15 @@ import zipfile
 import asyncio
 import shutil
 
-def is_zip_present(pecha_id: str) -> bool:
+def is_zip_present(pecha_id: str, dir_name: str) -> bool:
     """
     Check if a zip file with the name of the pecha_id exists in the current directory.
     """
-    return os.path.isfile(f"temp_opf/{pecha_id}.zip")
+    return os.path.isfile(f"pipeline/{dir_name}/{pecha_id}.zip")
 
-async def unzip_pecha(pecha_id: str):
-    zip_path = f"temp_opf/{pecha_id}.zip"
-    extract_dir = f"temp_opf/{pecha_id}"
+async def unzip_pecha(pecha_id: str, dir_name: str):
+    zip_path = f"pipeline/{dir_name}/{pecha_id}.zip"
+    extract_dir = f"pipeline/{dir_name}/{pecha_id}"
 
     if os.path.exists(zip_path):
         def _unzip():
@@ -22,9 +22,9 @@ async def unzip_pecha(pecha_id: str):
     else:
         print(f"Zip file {zip_path} does not exist.")
 
-def delete_zip_file(pecha_id: str):
+def delete_zip_file(pecha_id: str, dir_name: str):
     
-    zip_path = f"temp_opf/{pecha_id}.zip"
+    zip_path = f"pipeline/{dir_name}/{pecha_id}.zip"
     
 
     # Delete zip file
@@ -36,8 +36,8 @@ def delete_zip_file(pecha_id: str):
 
     
 
-def delete_extracted_folder(pecha_id: str):
-    folder_path = f"temp_opf/{pecha_id}"
+def delete_extracted_folder(pecha_id: str, dir_name: str):
+    folder_path = f"pipeline/{dir_name}/{pecha_id}"
     # Delete extracted folder
     if os.path.exists(folder_path):
         shutil.rmtree(folder_path)

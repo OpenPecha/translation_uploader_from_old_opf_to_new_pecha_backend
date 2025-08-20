@@ -29,12 +29,12 @@ def get_base_text(base_folders: List[str], base_dir: str, pecha_id: str):
             text = f.read()
         return text
 
-async def get_opf_base_text(pecha_id: str):
+async def get_opf_base_text(pecha_id: str, dir_name: str):
     print("Unzipping OPF for pecha id: ", pecha_id)
-    await unzip_pecha(pecha_id=pecha_id)
+    await unzip_pecha(pecha_id=pecha_id, dir_name=dir_name)
     print("OPF unzipped successfully")
     print("Getting base text for pecha id: ", pecha_id)
-    base_dir = f"temp_opf/{pecha_id}/base"
+    base_dir = f"pipeline/{dir_name}/{pecha_id}/base"
     if not os.path.exists(base_dir):
         print(f"Base directory not found for {pecha_id}")
         return None

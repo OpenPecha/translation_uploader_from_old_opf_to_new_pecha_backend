@@ -29,7 +29,6 @@ class TextType(Enum):
 class AiDetails(BaseModel):
     model: str | None = None
     workflow: str | None = None
-    prompt_id: str | None = None
 
 class AnnotationType(Enum):
     ALIGNMENT = "alignment"

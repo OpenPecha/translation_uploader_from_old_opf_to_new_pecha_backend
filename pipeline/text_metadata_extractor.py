@@ -16,7 +16,6 @@ async def get_root_text_id(text_id: str):
         return root_text_id
 
 def _get_root_text_id_from_response_(response: dict) -> str | None:
-    print(response)
     for item in response:
         if "translation_of" in item or "commentary_of" in item:
             continue
@@ -54,8 +53,6 @@ async def get_annotation_details(pecha_id: str):
     pecha_annotataion_id = list(pecha_annotation.keys())[0]
     pecha_annotataion = pecha_annotation[pecha_annotataion_id]
     annotation = {
-        "id": pecha_annotataion_id,
-        "type": pecha_annotataion['type'],
         "aligned_to": pecha_annotataion['aligned_to']['alignment_id']
     }
     return annotation

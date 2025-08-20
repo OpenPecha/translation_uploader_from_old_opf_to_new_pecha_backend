@@ -1,0 +1,47 @@
+{
+  "id": "I999EDD0C",
+  "title": {
+    "bo": "ཤེས་རབ་ཀྱི་ཕ་རོལ་ཏུ་ཕྱིན་པའི་སྙིང་པོ།",
+    "en": "The Heart of the Perfection of Wisdom",
+    "lzh": "般若波罗蜜多心经"
+  },
+  "author": {
+    "bo": "སྟོན་པ་བཅོམ་ལྡན་འདས།"
+  },
+  "imported": "2025-05-21T04:01:40.783205",
+  "source": "https://library.bdrc.io/show/bdr:WA0RK0529?s=q%3D%2522%25E0%25BD%25A4%25E0%25BD%25BA%25E0%25BD%25A6%25E0%25BC%258B%25E0%25BD%25A2%25E0%25BD%2596%25E0%25BC%258B%25E0%25BD%25A6%25E0%25BE%2599%25E0%25BD%25B2%25E0%25BD%2584%25E0%25BC%258B%25E0%25BD%2594%25E0%25BD%25BC%25E0%25BC%258D%2522~1%26lg%3Dbo%26t%3DWork%26n%3D1",
+  "toolkit_version": "2.1.12",
+  "parser": "DocxRootParser",
+  "initial_creation_type": "google_docx",
+  "language": "bo",
+  "source_metadata": {
+    "date": null,
+    "source_url": null,
+    "source_type": "docx",
+    "document_id": "1lE4YXF3XyR_6pZoTuQ-pxS5Qa9F2jckANqm6GIUvHY8",
+    "presentation": null,
+    "usage_title": null,
+    "long_title": {
+      "bo": "ཤེས་རབ་ཀྱི་ཕ་རོལ་ཏུ་ཕྱིན་པའི་སྙིང་པོ།"
+    },
+    "alt_titles": null,
+    "commentary_of": null,
+    "version_of": null,
+    "translation_of": null,
+    "category": null,
+    "bdrc": null
+  },
+  "bases": {},
+  "copyright": {
+    "status": "Unknown",
+    "notice": "",
+    "info_url": null
+  },
+  "licence": "Unknown",
+  "legacy_id": null,
+  "source_file": null,
+  "ocr_import_info": null,
+  "statistics": null,
+  "quality": null,
+  "last_modified": "2025-05-21T04:01:40.783190"
+}
