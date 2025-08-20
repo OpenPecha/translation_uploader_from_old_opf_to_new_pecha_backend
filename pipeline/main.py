@@ -93,6 +93,20 @@ def write_json_file(path: str, data: dict) -> None:
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
+def _generate_translation_model_(translation_language: str, translation_base_text: str, translation_text_metadata) -> TranslationPayload:
+    return TranslationPayload(
+        language=translation_language,
+        content=translation_base_text,
+        title=translation_text_metadata['title'][translation_language],
+        translator=Translator(
+            ai=AiDetails(
+                model="GPT-4",
+                workflow="Workflow-001",
+            )
+        ),
+        original_annotation="original annotation",
+        translation_annotation="translation annotation"
+    )
     
 async def get_translation_payloads(related_transation_text: List[dict]) -> List[TranslationPayload]:
     translation_payloads: List[TranslationPayload] = []
@@ -108,19 +122,9 @@ async def get_translation_payloads(related_transation_text: List[dict]) -> List[
         translation_language = translation_text_metadata['language']
 
 
-        translation_pyaload = TranslationPayload(
-            language=translation_language,
-            content=translation_base_text,
-            title=translation_text_metadata['title'][translation_language],
-            translator=Translator(
-                ai=AiDetails(
-                    model="GPT-4",
-                    workflow="Workflow-001",
-                )
-            ),
-            original_annotation="original annotation",
-            translation_annotation="translation annotation"
-        )
+
+        translation_pyaload = _generate_translation_model_(translation_language=translation_language, translation_base_text=translation_base_text, translation_text_metadata=translation_text_metadata)
+        
         translation_payloads.append(translation_pyaload)
         break
 
