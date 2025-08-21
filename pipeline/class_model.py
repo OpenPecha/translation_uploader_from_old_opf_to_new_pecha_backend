@@ -31,15 +31,12 @@ class Annotation(BaseModel):
     index: int
     alignment_index: List[str]
 
-class AiDetails(BaseModel):
-    ai: str
-
 class AnnotationType(Enum):
     ALIGNMENT = "alignment"
     SEGMENTATION = "segmentation"
 
 class Translator(BaseModel):
-    ai: AiDetails
+    ai: str
 
 class TranslationPayload(BaseModel):
     language: str

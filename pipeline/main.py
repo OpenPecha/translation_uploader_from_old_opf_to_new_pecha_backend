@@ -108,11 +108,6 @@ def write_json_file(path: str, data: dict) -> None:
 
 async def _generate_translation_model_(translation_text_id: str, root_text_id: str, translation_language: str, translation_base_text: str, translation_text_metadata) -> TranslationPayload:
 
-    translation_annotation_detail = await get_annotation_details(pecha_id=translation_text_id)
-
-    aligned_to = translation_annotation_detail.get('aligned_to', '')
-
-
     # Read the JSON file from pipeline/original_opf/{the_id}.json
     original_opf_path = os.path.join("pipeline", "original_opf", f"{root_text_id}.json")
     with open(original_opf_path, "r", encoding="utf-8") as f:
@@ -126,9 +121,7 @@ async def _generate_translation_model_(translation_text_id: str, root_text_id: s
         content=translation_base_text,
         title=translation_text_metadata['title'][translation_language],
         translator=Translator(
-            ai=AiDetails(
-                ai="ai_workflow_id_001",
-            )
+            ai="ai_workflow_id_001",
         ),
         original_annotation=[
             Annotation(
