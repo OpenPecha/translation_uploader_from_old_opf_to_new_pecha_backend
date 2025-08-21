@@ -1,0 +1,312 @@
+[
+  {
+    "Span": {
+      "start": 0,
+      "end": 32
+    },
+    "index": 1,
+    "alignment_index": [
+      "1"
+    ]
+  },
+  {
+    "Span": {
+      "start": 33,
+      "end": 66
+    },
+    "index": 2,
+    "alignment_index": [
+      "2"
+    ]
+  },
+  {
+    "Span": {
+      "start": 67,
+      "end": 99
+    },
+    "index": 3,
+    "alignment_index": [
+      "3"
+    ]
+  },
+  {
+    "Span": {
+      "start": 100,
+      "end": 103
+    },
+    "index": 4,
+    "alignment_index": [
+      "4"
+    ]
+  },
+  {
+    "Span": {
+      "start": 104,
+      "end": 113
+    },
+    "index": 5,
+    "alignment_index": [
+      "5"
+    ]
+  },
+  {
+    "Span": {
+      "start": 114,
+      "end": 122
+    },
+    "index": 6,
+    "alignment_index": [
+      "6"
+    ]
+  },
+  {
+    "Span": {
+      "start": 123,
+      "end": 155
+    },
+    "index": 7,
+    "alignment_index": [
+      "7"
+    ]
+  },
+  {
+    "Span": {
+      "start": 156,
+      "end": 188
+    },
+    "index": 8,
+    "alignment_index": [
+      "8"
+    ]
+  },
+  {
+    "Span": {
+      "start": 189,
+      "end": 221
+    },
+    "index": 9,
+    "alignment_index": [
+      "9"
+    ]
+  },
+  {
+    "Span": {
+      "start": 222,
+      "end": 254
+    },
+    "index": 10,
+    "alignment_index": [
+      "10"
+    ]
+  },
+  {
+    "Span": {
+      "start": 255,
+      "end": 287
+    },
+    "index": 11,
+    "alignment_index": [
+      "11"
+    ]
+  },
+  {
+    "Span": {
+      "start": 288,
+      "end": 320
+    },
+    "index": 12,
+    "alignment_index": [
+      "12"
+    ]
+  },
+  {
+    "Span": {
+      "start": 321,
+      "end": 353
+    },
+    "index": 13,
+    "alignment_index": [
+      "13"
+    ]
+  },
+  {
+    "Span": {
+      "start": 354,
+      "end": 386
+    },
+    "index": 14,
+    "alignment_index": [
+      "14"
+    ]
+  },
+  {
+    "Span": {
+      "start": 387,
+      "end": 403
+    },
+    "index": 15,
+    "alignment_index": [
+      "15"
+    ]
+  },
+  {
+    "Span": {
+      "start": 404,
+      "end": 436
+    },
+    "index": 16,
+    "alignment_index": [
+      "16"
+    ]
+  },
+  {
+    "Span": {
+      "start": 437,
+      "end": 475
+    },
+    "index": 17,
+    "alignment_index": [
+      "17"
+    ]
+  },
+  {
+    "Span": {
+      "start": 476,
+      "end": 508
+    },
+    "index": 18,
+    "alignment_index": [
+      "18"
+    ]
+  },
+  {
+    "Span": {
+      "start": 508,
+      "end": 543
+    },
+    "index": 19,
+    "alignment_index": [
+      "19"
+    ]
+  },
+  {
+    "Span": {
+      "start": 544,
+      "end": 576
+    },
+    "index": 20,
+    "alignment_index": [
+      "20"
+    ]
+  },
+  {
+    "Span": {
+      "start": 577,
+      "end": 609
+    },
+    "index": 21,
+    "alignment_index": [
+      "21"
+    ]
+  },
+  {
+    "Span": {
+      "start": 610,
+      "end": 642
+    },
+    "index": 22,
+    "alignment_index": [
+      "22"
+    ]
+  },
+  {
+    "Span": {
+      "start": 643,
+      "end": 675
+    },
+    "index": 23,
+    "alignment_index": [
+      "23"
+    ]
+  },
+  {
+    "Span": {
+      "start": 676,
+      "end": 712
+    },
+    "index": 24,
+    "alignment_index": [
+      "24"
+    ]
+  },
+  {
+    "Span": {
+      "start": 712,
+      "end": 741
+    },
+    "index": 25,
+    "alignment_index": [
+      "25"
+    ]
+  },
+  {
+    "Span": {
+      "start": 742,
+      "end": 773
+    },
+    "index": 26,
+    "alignment_index": [
+      "26"
+    ]
+  },
+  {
+    "Span": {
+      "start": 774,
+      "end": 806
+    },
+    "index": 27,
+    "alignment_index": [
+      "27"
+    ]
+  },
+  {
+    "Span": {
+      "start": 807,
+      "end": 839
+    },
+    "index": 28,
+    "alignment_index": [
+      "28"
+    ]
+  },
+  {
+    "Span": {
+      "start": 840,
+      "end": 848
+    },
+    "index": 29,
+    "alignment_index": [
+      "29"
+    ]
+  },
+  {
+    "Span": {
+      "start": 849,
+      "end": 856
+    },
+    "index": 30,
+    "alignment_index": [
+      "30"
+    ]
+  },
+  {
+    "Span": {
+      "start": 857,
+      "end": 922
+    },
+    "index": 31,
+    "alignment_index": [
+      "31"
+    ]
+  }
+]

@@ -54,13 +54,15 @@ def get_annotation_paths(pecha: Pecha, annotations: list[dict]):
         for annotation in annotations:
             if annotation['type'] == 'alignment':
                 annotation_filenames.append(annotation['type'] + "-" + annotation["id"])
+            elif annotation['type'] == 'segmentation':
+                annotation_filenames.append(annotation['type'] + "-" + annotation["id"])
             else:
                 continue
         return annotation_filenames
     
     annotation_paths = []
     annotation_filenames = get_annotation_names(annotations)
-    print(pecha.bases)
+
     for base_name in pecha.bases.keys():
         for path in Path(pecha.layer_path/base_name).iterdir():
             if path.stem in annotation_filenames:
@@ -91,7 +93,7 @@ def convert_to_new_format(annotations_dict, language):
     return annotations_dict
 
 
-def update_alignment(config):
+def update_alignment(config, language: str):
     pecha_path = Path(config['pecha_path'])
     annotation_dict = config['annotations']
 
@@ -101,8 +103,9 @@ def update_alignment(config):
     
     annotations = get_annotations(pecha, annotation_paths)
     
-    new_annotations = convert_to_new_format(annotations, "en") # You have to pass the language of the pecha
-    print(new_annotations)
+    new_annotations = convert_to_new_format(annotations, language) # You have to pass the language of the pecha
+
+    return new_annotations
 
 
 def scan_opf_directory(dir_name: str) -> list[dict]:

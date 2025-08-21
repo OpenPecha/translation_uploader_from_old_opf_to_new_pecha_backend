@@ -20,15 +20,19 @@ PAYLOAD EXAMPLE FOR TRANSLATION POST ENDPOINT
 '''
 from pydantic import BaseModel
 from enum import Enum
-from typing import Dict
+from typing import Dict, List
 
 class TextType(Enum):
     TRANSLATION = "translation"
     COMMENTARY = "commentary"
 
+class Annotation(BaseModel):
+    Span: Dict[str, int]
+    index: int
+    alignment_index: List[str]
+
 class AiDetails(BaseModel):
-    model: str | None = None
-    workflow: str | None = None
+    ai: str
 
 class AnnotationType(Enum):
     ALIGNMENT = "alignment"
@@ -37,16 +41,11 @@ class AnnotationType(Enum):
 class Translator(BaseModel):
     ai: AiDetails
 
-class Annotation(BaseModel):
-    id: str
-    type: str
-    aligned_to: str
-
 class TranslationPayload(BaseModel):
     language: str
     content: str
     title: str
     alt_title: Dict[str, str] | None = None
     translator: Translator
-    original_annotation: str | None = None
-    translation_annotation: str
+    original_annotation: List[Annotation]
+    translation_annotation: List[Annotation]
