@@ -26,15 +26,66 @@ from parse_annotation import (
     scan_opf_directory,
     update_alignment
 )
+from person_utils import (
+    PersonUtils
+)
 
 class Utils:
 
     @staticmethod
-    async def handle_non_ai_translation_text():
-        print("--------------------------------")
-        print("Handling non-ai translation text")
-        print("--------------------------------")
-        pass
+    async def handle_non_ai_translation_text(translation_text: dict, translation_text_metadata: dict, translation_text_id: str, original_text_metadata: dict):
+        original_text_language = original_text_metadata['language']
+        root_text_id = translation_text['translation_of']
+        translation_language = translation_text_metadata['language']
+
+        person_name = None
+        for author in translation_text_metadata['author']:
+            person_name = translation_text_metadata['author'][author]
+
+        all_persons_data = await PersonUtils.get_all_persons()
+        
+        is_person_exists = PersonUtils.search_person_by_name(person_name=person_name, language=translation_language, all_persons_data=all_persons_data)
+
+        person_id = None
+
+        if is_person_exists is None:
+            print(f"Person {person_name} does not exist in the database. Creating a new person.")
+            person_detail = await PersonUtils.create_person(person_name=person_name, language=translation_language)
+            person_id = person_detail['_id']
+        else:
+            person_id = is_person_exists
+
+        if person_id is None:
+            print("Failed to create a new person. Person ID is none. Translation id: ", translation_text_id)
+            return
+
+
+        if not await Utils.download_and_preprocess_pecha_root_and_translation(translation_text=translation_text):
+            return
+        
+        translation_base_text = await get_opf_base_text(pecha_id=translation_text_id, dir_name="translation_opf") 
+
+
+        Utils.write_original_annotation_to_a_json_file(pecha_id=root_text_id, language=original_text_language, dir_name="original_opf")
+        Utils.write_translation_annotation_to_a_json_file(pecha_id=translation_text_id, language=translation_language, dir_name="translation_opf")
+
+        translation_payload_model = await Utils.generate_translation_model_for_none_ai_translation(
+            translation_text_id=translation_text_id, 
+            root_text_id=root_text_id, 
+            translation_language=translation_language, 
+            translation_base_text=translation_base_text, 
+            translation_text_metadata=translation_text_metadata,
+            person_id=person_id
+        )
+
+        Utils.write_json_file(
+            path=os.path.join("pipeline/post_payloads", f"{translation_text_id}_payload.json"),
+            data=translation_payload_model.dict()
+        )
+
+        delete_zip_file(pecha_id=translation_text_id, dir_name="translation_opf")
+        delete_extracted_folder(pecha_id=translation_text_id, dir_name="translation_opf")
+        
 
     @staticmethod
     async def handle_ai_translation_text(translation_text: dict, translation_text_metadata: dict, translation_text_id: str, original_text_metadata: dict):
@@ -130,6 +181,44 @@ class Utils:
             title=translation_text_metadata['title'][translation_language],
             translator=Translator(
                 ai_id="translation_workflow_v1.0.0_claude_3_7_sonnet",
+            ),
+            original_annotation=[
+                Annotation(
+                    span=annotation['Span'],
+                    index=annotation['index'],
+                    alignment_index=annotation['alignment_index']
+                )
+                for annotation in original_annotations
+            ],
+            translation_annotation=[
+                Annotation(
+                    span=annotation['Span'],
+                    index=annotation['index'],
+                    alignment_index=annotation['alignment_index']
+                )
+                for annotation in translation_annotations
+            ]
+        )
+
+        return response
+
+    @staticmethod
+    async def generate_translation_model_for_none_ai_translation(translation_text_id: str, root_text_id: str, translation_language: str, translation_base_text: str, translation_text_metadata, person_id: str) -> TranslationPayload:
+
+        # Read the JSON file from pipeline/original_opf/{the_id}.json
+        original_opf_path = os.path.join("pipeline", "original_opf", f"{root_text_id}.json")
+        with open(original_opf_path, "r", encoding="utf-8") as f:
+            original_annotations = json.load(f)
+        translation_opf_path = os.path.join("pipeline", "translation_opf", f"{translation_text_id}.json")
+        with open(translation_opf_path, "r", encoding="utf-8") as f:
+            translation_annotations = json.load(f)
+
+        response = TranslationPayload(
+            language=translation_language,
+            content=translation_base_text,
+            title=translation_text_metadata['title'][translation_language],
+            translator=Translator(
+                person_id=person_id,
             ),
             original_annotation=[
                 Annotation(

@@ -7,6 +7,9 @@ from text_metadata_extractor import (
     get_related_translation_texts,
     get_text_metadata
 )
+from person_utils import (
+    PersonUtils
+)
 from typing import List
 
 
@@ -34,10 +37,12 @@ async def generate_original_and_translation_payloads(related_transation_text: Li
                 translation_text=translation_text
             )
         else:
-            print()
-            print("Non AI -> ", translation_text_id)
-            print()
-            await Utils.handle_non_ai_translation_text()
+            await Utils.handle_non_ai_translation_text(
+                translation_text_metadata=translation_text_metadata, 
+                translation_text_id=translation_text_id,
+                original_text_metadata=original_text_metadata,
+                translation_text=translation_text
+            )
         
         
         await asyncio.sleep(2)
