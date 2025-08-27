@@ -4,320 +4,319 @@
   "title": "般若波罗蜜多心经",
   "alt_title": null,
   "translator": {
-    "ai": {
-      "ai": "ai_workflow_id_001"
-    }
+    "ai_id": "translation_workflow_v1.0.0_claude_3_7_sonnet",
+    "person_id": null
   },
   "original_annotation": [],
   "translation_annotation": [
     {
-      "Span": {
+      "span": {
         "start": 0,
         "end": 32
       },
       "index": 1,
       "alignment_index": [
-        "1"
+        1
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 33,
         "end": 66
       },
       "index": 2,
       "alignment_index": [
-        "2"
+        2
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 67,
         "end": 99
       },
       "index": 3,
       "alignment_index": [
-        "3"
+        3
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 100,
         "end": 103
       },
       "index": 4,
       "alignment_index": [
-        "4"
+        4
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 104,
         "end": 113
       },
       "index": 5,
       "alignment_index": [
-        "5"
+        5
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 114,
         "end": 122
       },
       "index": 6,
       "alignment_index": [
-        "6"
+        6
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 123,
         "end": 155
       },
       "index": 7,
       "alignment_index": [
-        "7"
+        7
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 156,
         "end": 188
       },
       "index": 8,
       "alignment_index": [
-        "8"
+        8
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 189,
         "end": 221
       },
       "index": 9,
       "alignment_index": [
-        "9"
+        9
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 222,
         "end": 254
       },
       "index": 10,
       "alignment_index": [
-        "10"
+        10
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 255,
         "end": 287
       },
       "index": 11,
       "alignment_index": [
-        "11"
+        11
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 288,
         "end": 320
       },
       "index": 12,
       "alignment_index": [
-        "12"
+        12
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 321,
         "end": 353
       },
       "index": 13,
       "alignment_index": [
-        "13"
+        13
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 354,
         "end": 386
       },
       "index": 14,
       "alignment_index": [
-        "14"
+        14
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 387,
         "end": 403
       },
       "index": 15,
       "alignment_index": [
-        "15"
+        15
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 404,
         "end": 436
       },
       "index": 16,
       "alignment_index": [
-        "16"
+        16
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 437,
         "end": 475
       },
       "index": 17,
       "alignment_index": [
-        "17"
+        17
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 476,
         "end": 508
       },
       "index": 18,
       "alignment_index": [
-        "18"
+        18
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 508,
         "end": 543
       },
       "index": 19,
       "alignment_index": [
-        "19"
+        19
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 544,
         "end": 576
       },
       "index": 20,
       "alignment_index": [
-        "20"
+        20
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 577,
         "end": 609
       },
       "index": 21,
       "alignment_index": [
-        "21"
+        21
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 610,
         "end": 642
       },
       "index": 22,
       "alignment_index": [
-        "22"
+        22
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 643,
         "end": 675
       },
       "index": 23,
       "alignment_index": [
-        "23"
+        23
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 676,
         "end": 712
       },
       "index": 24,
       "alignment_index": [
-        "24"
+        24
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 712,
         "end": 741
       },
       "index": 25,
       "alignment_index": [
-        "25"
+        25
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 742,
         "end": 773
       },
       "index": 26,
       "alignment_index": [
-        "26"
+        26
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 774,
         "end": 806
       },
       "index": 27,
       "alignment_index": [
-        "27"
+        27
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 807,
         "end": 839
       },
       "index": 28,
       "alignment_index": [
-        "28"
+        28
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 840,
         "end": 848
       },
       "index": 29,
       "alignment_index": [
-        "29"
+        29
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 849,
         "end": 856
       },
       "index": 30,
       "alignment_index": [
-        "30"
+        30
       ]
     },
     {
-      "Span": {
+      "span": {
         "start": 857,
         "end": 922
       },
       "index": 31,
       "alignment_index": [
-        "31"
+        31
       ]
     }
   ]

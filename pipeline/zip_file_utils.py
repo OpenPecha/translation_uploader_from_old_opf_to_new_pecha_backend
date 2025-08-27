@@ -3,6 +3,7 @@ import zipfile
 import asyncio
 import shutil
 
+
 def is_zip_present(pecha_id: str, dir_name: str) -> bool:
     """
     Check if a zip file with the name of the pecha_id exists in the current directory.
