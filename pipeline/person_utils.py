@@ -21,6 +21,7 @@ class PersonUtils:
         
     @staticmethod
     async def create_person(person_name: str, language: str) -> dict:
+        print("Creating person -> ", person_name, " with language -> ", language)
         payload = CreatePersonPayload(
             name={
                 language: person_name
@@ -56,4 +57,8 @@ if __name__ == "__main__":
 jKxZYPqsPrF6f3wD
 RPfFQ67F85phX-BY
 aVRZ_mewidp7lVEN
+
+mxJGS4Pb9ShkOjQf
+UqS_4iN8CtuOZJRH
+ce_OnjmfDKmVwETQ
 '''

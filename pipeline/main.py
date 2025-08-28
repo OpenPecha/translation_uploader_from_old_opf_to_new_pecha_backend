@@ -51,16 +51,13 @@ async def generate_original_and_translation_payloads(related_transation_text: Li
         print("\n\n")
 
 
-async def generate_translation_payload():
-
-    text_id = input("Enter the pecha id: ")
-
-    root_text_id = await get_root_text_id(text_id=text_id)
+async def generate_translation_payload(root_text_id: str):
 
     related_transation_text = await get_related_translation_texts(text_id=root_text_id)
 
     await generate_original_and_translation_payloads(related_transation_text=related_transation_text, root_text_id=root_text_id)
 
 if __name__ == "__main__":
-    asyncio.run(generate_translation_payload())
+    root_text_id = input("Enter the root/pecha text id: ")
+    asyncio.run(generate_translation_payload(root_text_id=root_text_id))
 

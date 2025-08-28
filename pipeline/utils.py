@@ -34,6 +34,10 @@ class Utils:
 
     @staticmethod
     async def handle_non_ai_translation_text(translation_text: dict, translation_text_metadata: dict, translation_text_id: str, original_text_metadata: dict):
+        print("--------------------------------")
+        print("Handling non-ai translation text -> ", translation_text_id)
+        print("--------------------------------")
+        
         original_text_language = original_text_metadata['language']
         root_text_id = translation_text['translation_of']
         translation_language = translation_text_metadata['language']
@@ -69,7 +73,7 @@ class Utils:
         Utils.write_original_annotation_to_a_json_file(pecha_id=root_text_id, language=original_text_language, dir_name="original_opf")
         Utils.write_translation_annotation_to_a_json_file(pecha_id=translation_text_id, language=translation_language, dir_name="translation_opf")
 
-        translation_payload_model = await Utils.generate_translation_model_for_none_ai_translation(
+        translation_payload_model = Utils.generate_translation_model_for_none_ai_translation(
             translation_text_id=translation_text_id, 
             root_text_id=root_text_id, 
             translation_language=translation_language, 
@@ -89,6 +93,10 @@ class Utils:
 
     @staticmethod
     async def handle_ai_translation_text(translation_text: dict, translation_text_metadata: dict, translation_text_id: str, original_text_metadata: dict):
+        print("--------------------------------")
+        print("Handling ai translation text -> ", translation_text_id)
+        print("--------------------------------")
+
         original_text_language = original_text_metadata['language']
         root_text_id = translation_text['translation_of']
 
@@ -102,7 +110,7 @@ class Utils:
         Utils.write_original_annotation_to_a_json_file(pecha_id=root_text_id, language=original_text_language, dir_name="original_opf")
         Utils.write_translation_annotation_to_a_json_file(pecha_id=translation_text_id, language=translation_language, dir_name="translation_opf")
 
-        translation_payload_model = await Utils.generate_translation_model_for_ai_translation(translation_text_id=translation_text_id, root_text_id=root_text_id, translation_language=translation_language, translation_base_text=translation_base_text, translation_text_metadata=translation_text_metadata)
+        translation_payload_model = Utils.generate_translation_model_for_ai_translation(translation_text_id=translation_text_id, root_text_id=root_text_id, translation_language=translation_language, translation_base_text=translation_base_text, translation_text_metadata=translation_text_metadata)
 
         Utils.write_json_file(
             path=os.path.join("pipeline/post_payloads", f"{translation_text_id}_payload.json"),
@@ -128,7 +136,7 @@ class Utils:
                 }
                 required_annotations.append(temp)
             return required_annotations
-        except Exception as e:
+        except Exception:
             print("ERROR OCCURED -> ", new_annotations)
             return []
 
@@ -165,7 +173,7 @@ class Utils:
             Utils.write_annotations_to_json(annotations=final_annotations, pecha_id=pecha_id, directory=dir_name)
 
     @staticmethod
-    async def generate_translation_model_for_ai_translation(translation_text_id: str, root_text_id: str, translation_language: str, translation_base_text: str, translation_text_metadata) -> TranslationPayload:
+    def generate_translation_model_for_ai_translation(translation_text_id: str, root_text_id: str, translation_language: str, translation_base_text: str, translation_text_metadata) -> TranslationPayload:
 
         # Read the JSON file from pipeline/original_opf/{the_id}.json
         original_opf_path = os.path.join("pipeline", "original_opf", f"{root_text_id}.json")
@@ -203,7 +211,7 @@ class Utils:
         return response
 
     @staticmethod
-    async def generate_translation_model_for_none_ai_translation(translation_text_id: str, root_text_id: str, translation_language: str, translation_base_text: str, translation_text_metadata, person_id: str) -> TranslationPayload:
+    def generate_translation_model_for_none_ai_translation(translation_text_id: str, root_text_id: str, translation_language: str, translation_base_text: str, translation_text_metadata, person_id: str) -> TranslationPayload:
 
         # Read the JSON file from pipeline/original_opf/{the_id}.json
         original_opf_path = os.path.join("pipeline", "original_opf", f"{root_text_id}.json")

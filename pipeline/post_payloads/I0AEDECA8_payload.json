@@ -1,0 +1,536 @@
+{
+  "language": "zh",
+  "content": "具德佛母般若波罗蜜多心要\n印度语（梵语）：薄伽梵般若波罗蜜多心经\n世尊母般若波罗蜜多心经\n第一卷\n敬礼世尊母般若波罗蜜多。\n如是我闻，一时。\n薄伽梵于王舍城鹫峰山上，与大比丘僧团及大菩萨僧团共同安住。\n当时，世尊示现入于名为'甚深显现'的法类三摩地。\n尔时，圣观自在菩萨摩诃萨，正观照甚深般若波罗蜜多行。\n应当如实观照五蕴皆空无自性。\n尔时，借由佛陀加持力，具寿舍利子向圣观自在菩萨摩诃萨如是说道：\n'善男子，若有人希望修持甚深般若波罗蜜多行，应当如何学习？'说此语时，菩萨摩诃萨圣观自在对具寿舍利子如是言道：'舍利子，若善男子或善女人，希望修持甚深般若波罗蜜多行，应当如是观照：应当如实正观五蕴自性皆空。'\n色即是空。空即是色。\n色非异于空，空亦非异于色。\n同样地，受、想、行以及一切识亦皆为空。\n舍利子，因此一切法皆是空性，无相（超越一切执取之相），不生（不由因缘所生），不灭（超越灭尽），无垢（染污轮回本性不存在），无离垢（本来不落入能所对立），无减（法性不会减少），无增（法性不可增长）。舍利子，是故于此大空性中，无色，无受，无想，无行，无识；无眼，无耳，无鼻，无舌，无身，无意；无色，无声，无香，无味，无触，无法。\n从眼界不存在，乃至意界亦不存在；意识界以及中间所有界亦不存在。\n无无明，亦无无明尽；乃至无老死，亦无老死尽。无苦、集、灭、道。无智慧，无所得，亦无无所得。\n舍利子，因此，菩萨们因无所得故，依止并安住于般若波罗蜜多中。\n由于心无障蔽，故无恐惧；已彻底超越一切颠倒妄见，最终圆满成就涅槃。\n安住于三世中的一切诸佛，皆依靠般若波罗蜜多，现前圆满证悟无上、真实圆满的菩提。\n因此，应当了知般若波罗蜜多咒，这是大智慧咒，超越一切的无上咒，无与伦比而平等的咒，能息灭一切苦的咒，因不虚妄故应知为真实。\n即是如此：已去已去，已去往彼岸，已完全去往彼岸，菩提觉悟，愿其根基稳固！\n舍利子，菩萨摩诃萨应当如是修学甚深般若波罗蜜多。\n尔时，世尊从彼三摩地安详起身，并向圣观自在菩萨摩诃萨赐予赞叹，说道：'善哉！善哉！善男子，正是如此！'\n善男子，诚然如是。应当按照你所教导的那样，修习甚深的般若波罗蜜多。\n世尊如是宣说已毕，\n世尊如是说已，具寿舍利子及观自在菩萨摩诃萨，与会一切眷属、天、人、阿修罗、乾闼婆等世间众生，皆大欢喜，于世尊所说，称赞礼敬。\n《圣般若波罗蜜多心经》圆满\n",
+  "title": "般若波羅密多心經 AI Draft",
+  "alt_title": null,
+  "translator": {
+    "ai_id": "translation_workflow_v1.0.0_claude_3_7_sonnet",
+    "person_id": null
+  },
+  "original_annotation": [
+    {
+      "span": {
+        "start": 0,
+        "end": 54
+      },
+      "index": 1,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 55,
+        "end": 110
+      },
+      "index": 2,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 111,
+        "end": 175
+      },
+      "index": 3,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 176,
+        "end": 193
+      },
+      "index": 4,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 194,
+        "end": 251
+      },
+      "index": 5,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 252,
+        "end": 287
+      },
+      "index": 6,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 288,
+        "end": 428
+      },
+      "index": 7,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 429,
+        "end": 527
+      },
+      "index": 8,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 528,
+        "end": 669
+      },
+      "index": 9,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 670,
+        "end": 730
+      },
+      "index": 10,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 731,
+        "end": 861
+      },
+      "index": 11,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 862,
+        "end": 1321
+      },
+      "index": 12,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 1322,
+        "end": 1363
+      },
+      "index": 13,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 1364,
+        "end": 1435
+      },
+      "index": 14,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 1436,
+        "end": 1516
+      },
+      "index": 15,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 1517,
+        "end": 1888
+      },
+      "index": 16,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 1889,
+        "end": 1976
+      },
+      "index": 17,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 1978,
+        "end": 2155
+      },
+      "index": 18,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 2156,
+        "end": 2269
+      },
+      "index": 19,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 2270,
+        "end": 2366
+      },
+      "index": 20,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 2367,
+        "end": 2527
+      },
+      "index": 21,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 2528,
+        "end": 2763
+      },
+      "index": 22,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 2764,
+        "end": 2821
+      },
+      "index": 23,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 2822,
+        "end": 2923
+      },
+      "index": 24,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 2924,
+        "end": 3106
+      },
+      "index": 25,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 3107,
+        "end": 3262
+      },
+      "index": 26,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 3263,
+        "end": 3305
+      },
+      "index": 27,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 3306,
+        "end": 3548
+      },
+      "index": 28,
+      "alignment_index": []
+    },
+    {
+      "span": {
+        "start": 3549,
+        "end": 3606
+      },
+      "index": 29,
+      "alignment_index": []
+    }
+  ],
+  "translation_annotation": [
+    {
+      "span": {
+        "start": 0,
+        "end": 12
+      },
+      "index": 1,
+      "alignment_index": [
+        1
+      ]
+    },
+    {
+      "span": {
+        "start": 13,
+        "end": 32
+      },
+      "index": 2,
+      "alignment_index": [
+        2
+      ]
+    },
+    {
+      "span": {
+        "start": 33,
+        "end": 44
+      },
+      "index": 3,
+      "alignment_index": [
+        3
+      ]
+    },
+    {
+      "span": {
+        "start": 45,
+        "end": 48
+      },
+      "index": 4,
+      "alignment_index": [
+        4
+      ]
+    },
+    {
+      "span": {
+        "start": 49,
+        "end": 61
+      },
+      "index": 5,
+      "alignment_index": [
+        5
+      ]
+    },
+    {
+      "span": {
+        "start": 62,
+        "end": 70
+      },
+      "index": 6,
+      "alignment_index": [
+        6
+      ]
+    },
+    {
+      "span": {
+        "start": 71,
+        "end": 100
+      },
+      "index": 7,
+      "alignment_index": [
+        7
+      ]
+    },
+    {
+      "span": {
+        "start": 101,
+        "end": 125
+      },
+      "index": 8,
+      "alignment_index": [
+        8
+      ]
+    },
+    {
+      "span": {
+        "start": 126,
+        "end": 152
+      },
+      "index": 9,
+      "alignment_index": [
+        9
+      ]
+    },
+    {
+      "span": {
+        "start": 153,
+        "end": 167
+      },
+      "index": 10,
+      "alignment_index": [
+        10
+      ]
+    },
+    {
+      "span": {
+        "start": 168,
+        "end": 199
+      },
+      "index": 11,
+      "alignment_index": [
+        11
+      ]
+    },
+    {
+      "span": {
+        "start": 200,
+        "end": 304
+      },
+      "index": 12,
+      "alignment_index": [
+        12
+      ]
+    },
+    {
+      "span": {
+        "start": 305,
+        "end": 315
+      },
+      "index": 13,
+      "alignment_index": [
+        13
+      ]
+    },
+    {
+      "span": {
+        "start": 316,
+        "end": 329
+      },
+      "index": 14,
+      "alignment_index": [
+        14
+      ]
+    },
+    {
+      "span": {
+        "start": 330,
+        "end": 349
+      },
+      "index": 15,
+      "alignment_index": [
+        15
+      ]
+    },
+    {
+      "span": {
+        "start": 350,
+        "end": 512
+      },
+      "index": 16,
+      "alignment_index": [
+        16
+      ]
+    },
+    {
+      "span": {
+        "start": 513,
+        "end": 544
+      },
+      "index": 17,
+      "alignment_index": [
+        17
+      ]
+    },
+    {
+      "span": {
+        "start": 545,
+        "end": 590
+      },
+      "index": 18,
+      "alignment_index": [
+        18
+      ]
+    },
+    {
+      "span": {
+        "start": 591,
+        "end": 621
+      },
+      "index": 19,
+      "alignment_index": [
+        19
+      ]
+    },
+    {
+      "span": {
+        "start": 622,
+        "end": 655
+      },
+      "index": 20,
+      "alignment_index": [
+        20
+      ]
+    },
+    {
+      "span": {
+        "start": 656,
+        "end": 695
+      },
+      "index": 21,
+      "alignment_index": [
+        21
+      ]
+    },
+    {
+      "span": {
+        "start": 696,
+        "end": 757
+      },
+      "index": 22,
+      "alignment_index": [
+        22
+      ]
+    },
+    {
+      "span": {
+        "start": 758,
+        "end": 794
+      },
+      "index": 23,
+      "alignment_index": [
+        23
+      ]
+    },
+    {
+      "span": {
+        "start": 795,
+        "end": 819
+      },
+      "index": 24,
+      "alignment_index": [
+        24
+      ]
+    },
+    {
+      "span": {
+        "start": 820,
+        "end": 871
+      },
+      "index": 25,
+      "alignment_index": [
+        25
+      ]
+    },
+    {
+      "span": {
+        "start": 872,
+        "end": 905
+      },
+      "index": 26,
+      "alignment_index": [
+        26
+      ]
+    },
+    {
+      "span": {
+        "start": 906,
+        "end": 915
+      },
+      "index": 27,
+      "alignment_index": [
+        27
+      ]
+    },
+    {
+      "span": {
+        "start": 916,
+        "end": 978
+      },
+      "index": 28,
+      "alignment_index": [
+        28
+      ]
+    },
+    {
+      "span": {
+        "start": 979,
+        "end": 992
+      },
+      "index": 29,
+      "alignment_index": [
+        29
+      ]
+    }
+  ]
+}
