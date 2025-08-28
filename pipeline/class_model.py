@@ -38,6 +38,7 @@ class AnnotationType(Enum):
 class Translator(BaseModel):
     ai_id: Optional[str] = None
     person_id: Optional[str] = None
+    person_bdrc_id: Optional[str] = None
 
 class TranslationPayload(BaseModel):
     language: str

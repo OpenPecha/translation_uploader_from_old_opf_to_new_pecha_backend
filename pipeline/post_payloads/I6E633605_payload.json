@@ -1,0 +1,324 @@
+{
+  "language": "lzh",
+  "content": "佛母般若波羅蜜，究竟圓滿到彼岸，甚深智慧之心要，無上法寶利眾生。\n梵語經名如是述明，薄伽梵底聖尊號，般若波羅蜜多法，心經精要此中彰。\n藏語所詮般若名，薄伽梵母證彼岸，般若波羅徹究竟，心經精要妙無窮。\n卷第一\n頂禮般若波羅蜜母。\n如是我聞一時中，\n世尊安住靈鷲山，王舍城中勝聖境，比丘菩薩二大眾，同時共處一法會。\n爾時世尊入三摩，甚深光明法門定，如是稱名妙禪那，平等安住無動搖。\n爾時觀自在菩薩，大士聖尊具慧眼，甚深般若波羅行，如理審觀正思維。\n於彼五蘊諸法中，亦應觀察無自性，了知本性皆空寂，如是徹底當觀照。\n爾時佛陀威神力，具壽舍利智慧子，對彼觀音大菩薩，如是言詞而發問。\n欲修甚深般若行，观音菩萨告身子，善男信女应如是，五蕴自性观皆空。\n色相本體即為空，空性不離於色法，色即是空無別異，空即是色實相中。\n願諸有情眾生等，悉具安樂無所乏，復具安樂諸因緣，如是勝願願成就。\n色不異空非他體，空性不異色亦然。\n如是受想行識蘊，一一自性皆非有，四蘊本來同一理，悉皆空寂無所得。\n舍利子故諸法空，\\n無相不生亦不滅，\\n無垢非離垢非取，\\n不減不增法真如。\n舍利子，是故空性中，色受想行識皆無，眼耳鼻舌身意無，色聲香味觸法無。\n眼界非有意亦無，從眼乃至意界間，以及意識界邊際，如是諸界悉皆空。\n無明不存無明滅，從此乃至老死空，苦集滅道皆非有，智慧無得亦無證。\n舍利子故諸菩薩，以無所得為因由，依止般若波羅蜜，如是安住離障礙。\n心無障礙離恐懼，徹超顛倒諸妄想，遠離憂苦證涅槃，究竟圓成解脫道。\n三世諸佛皆依止，般若波羅妙智慧，無上圓滿菩提果，究竟證悟成正覺。\n是故般若波羅咒，大明無上無等等，能除一切諸苦厄，真實不虛誦此言。\n即說咒曰度迷津，超越超越到彼岸，究竟圓滿度一切，無上菩提願成就。\n舍利弗聽佛言，菩薩摩訶薩應當，如是修學般若度，甚深智慧到彼岸。\n爾時世尊起三昧，善哉讚歎觀自在，復言善哉善男子，如是所言實真諦。\n善男子，诚如是，如汝所教当修行，甚深般若波罗蜜，应当精进勤修习。\n諸如來亦皆隨喜。\n世尊如是宣說已\n具壽舍利佛菩薩，大眾天人阿修羅，聞法歡喜心充滿，同贊世尊妙法音。\n聖般若波羅蜜多，心要精髓此真名，微妙甚深無上法，究竟圓滿已完成。\n",
+  "title": "般若波罗蜜多心经",
+  "alt_title": null,
+  "translator": {
+    "ai_id": "translation_workflow_v1.0.0_claude_3_7_sonnet",
+    "person_id": null,
+    "person_bdrc_id": null
+  },
+  "original_annotation": [],
+  "translation_annotation": [
+    {
+      "span": {
+        "start": 0,
+        "end": 32
+      },
+      "index": 1,
+      "alignment_index": [
+        1
+      ]
+    },
+    {
+      "span": {
+        "start": 33,
+        "end": 66
+      },
+      "index": 2,
+      "alignment_index": [
+        2
+      ]
+    },
+    {
+      "span": {
+        "start": 67,
+        "end": 99
+      },
+      "index": 3,
+      "alignment_index": [
+        3
+      ]
+    },
+    {
+      "span": {
+        "start": 100,
+        "end": 103
+      },
+      "index": 4,
+      "alignment_index": [
+        4
+      ]
+    },
+    {
+      "span": {
+        "start": 104,
+        "end": 113
+      },
+      "index": 5,
+      "alignment_index": [
+        5
+      ]
+    },
+    {
+      "span": {
+        "start": 114,
+        "end": 122
+      },
+      "index": 6,
+      "alignment_index": [
+        6
+      ]
+    },
+    {
+      "span": {
+        "start": 123,
+        "end": 155
+      },
+      "index": 7,
+      "alignment_index": [
+        7
+      ]
+    },
+    {
+      "span": {
+        "start": 156,
+        "end": 188
+      },
+      "index": 8,
+      "alignment_index": [
+        8
+      ]
+    },
+    {
+      "span": {
+        "start": 189,
+        "end": 221
+      },
+      "index": 9,
+      "alignment_index": [
+        9
+      ]
+    },
+    {
+      "span": {
+        "start": 222,
+        "end": 254
+      },
+      "index": 10,
+      "alignment_index": [
+        10
+      ]
+    },
+    {
+      "span": {
+        "start": 255,
+        "end": 287
+      },
+      "index": 11,
+      "alignment_index": [
+        11
+      ]
+    },
+    {
+      "span": {
+        "start": 288,
+        "end": 320
+      },
+      "index": 12,
+      "alignment_index": [
+        12
+      ]
+    },
+    {
+      "span": {
+        "start": 321,
+        "end": 353
+      },
+      "index": 13,
+      "alignment_index": [
+        13
+      ]
+    },
+    {
+      "span": {
+        "start": 354,
+        "end": 386
+      },
+      "index": 14,
+      "alignment_index": [
+        14
+      ]
+    },
+    {
+      "span": {
+        "start": 387,
+        "end": 403
+      },
+      "index": 15,
+      "alignment_index": [
+        15
+      ]
+    },
+    {
+      "span": {
+        "start": 404,
+        "end": 436
+      },
+      "index": 16,
+      "alignment_index": [
+        16
+      ]
+    },
+    {
+      "span": {
+        "start": 437,
+        "end": 475
+      },
+      "index": 17,
+      "alignment_index": [
+        17
+      ]
+    },
+    {
+      "span": {
+        "start": 476,
+        "end": 508
+      },
+      "index": 18,
+      "alignment_index": [
+        18
+      ]
+    },
+    {
+      "span": {
+        "start": 508,
+        "end": 543
+      },
+      "index": 19,
+      "alignment_index": [
+        19
+      ]
+    },
+    {
+      "span": {
+        "start": 544,
+        "end": 576
+      },
+      "index": 20,
+      "alignment_index": [
+        20
+      ]
+    },
+    {
+      "span": {
+        "start": 577,
+        "end": 609
+      },
+      "index": 21,
+      "alignment_index": [
+        21
+      ]
+    },
+    {
+      "span": {
+        "start": 610,
+        "end": 642
+      },
+      "index": 22,
+      "alignment_index": [
+        22
+      ]
+    },
+    {
+      "span": {
+        "start": 643,
+        "end": 675
+      },
+      "index": 23,
+      "alignment_index": [
+        23
+      ]
+    },
+    {
+      "span": {
+        "start": 676,
+        "end": 712
+      },
+      "index": 24,
+      "alignment_index": [
+        24
+      ]
+    },
+    {
+      "span": {
+        "start": 712,
+        "end": 741
+      },
+      "index": 25,
+      "alignment_index": [
+        25
+      ]
+    },
+    {
+      "span": {
+        "start": 742,
+        "end": 773
+      },
+      "index": 26,
+      "alignment_index": [
+        26
+      ]
+    },
+    {
+      "span": {
+        "start": 774,
+        "end": 806
+      },
+      "index": 27,
+      "alignment_index": [
+        27
+      ]
+    },
+    {
+      "span": {
+        "start": 807,
+        "end": 839
+      },
+      "index": 28,
+      "alignment_index": [
+        28
+      ]
+    },
+    {
+      "span": {
+        "start": 840,
+        "end": 848
+      },
+      "index": 29,
+      "alignment_index": [
+        29
+      ]
+    },
+    {
+      "span": {
+        "start": 849,
+        "end": 856
+      },
+      "index": 30,
+      "alignment_index": [
+        30
+      ]
+    },
+    {
+      "span": {
+        "start": 857,
+        "end": 922
+      },
+      "index": 31,
+      "alignment_index": [
+        31
+      ]
+    }
+  ]
+}

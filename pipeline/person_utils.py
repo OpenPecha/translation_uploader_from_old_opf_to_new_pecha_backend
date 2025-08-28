@@ -6,7 +6,7 @@ from constant import (
 from class_model import (
     CreatePersonPayload
 )
-from typing import Optional
+from typing import Optional, Dict
 
 NEW_OPEN_PECHA_BACKEND_URL = get_constant("GABOR_NEW_ENDPOINT")
 
@@ -35,14 +35,20 @@ class PersonUtils:
             return response
         
     @staticmethod
-    def search_person_by_name(person_name: str, language: str, all_persons_data: dict) -> Optional[bool]:
+    def search_person_by_name(person_name: str, language: str, all_persons_data: dict) -> Optional[Dict[str, str]]:
         for person in all_persons_data:
             if person['name'] is not None:
                 if (language in person['name'] and person['name'][language] == person_name):
-                    return person['id']
+                    return {
+                        'bdrc_id': person['bdrc'], 
+                        'id': person['id']
+                    }
             if person['alt_names'] is not None:
                 if (language in person['alt_names'] and person['alt_names'][language] == person_name):
-                    return person['id']
+                    return {
+                        'bdrc_id': person['bdrc'], 
+                        'id': person['id']
+                        }
         return None
 
 

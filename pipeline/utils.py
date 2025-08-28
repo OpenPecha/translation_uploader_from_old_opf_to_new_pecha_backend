@@ -1,7 +1,7 @@
 import os
 import asyncio
 import json
-
+from typing import Dict
 from class_model import (
     TranslationPayload,
     Translator,
@@ -48,16 +48,17 @@ class Utils:
 
         all_persons_data = await PersonUtils.get_all_persons()
         
-        is_person_exists = PersonUtils.search_person_by_name(person_name=person_name, language=translation_language, all_persons_data=all_persons_data)
+        person_ids: Dict[str, str] = PersonUtils.search_person_by_name(person_name=person_name, language=translation_language, all_persons_data=all_persons_data)
 
         person_id = None
 
-        if is_person_exists is None:
+        if person_ids is None:
             print(f"Person {person_name} does not exist in the database. Creating a new person.")
             person_detail = await PersonUtils.create_person(person_name=person_name, language=translation_language)
             person_id = person_detail['_id']
         else:
-            person_id = is_person_exists
+            person_id = person_ids['id']
+            person_bdrc_id = person_ids['bdrc_id']
 
         if person_id is None:
             print("Failed to create a new person. Person ID is none. Translation id: ", translation_text_id)
@@ -79,7 +80,8 @@ class Utils:
             translation_language=translation_language, 
             translation_base_text=translation_base_text, 
             translation_text_metadata=translation_text_metadata,
-            person_id=person_id
+            person_id=person_id,
+            person_bdrc_id=person_bdrc_id
         )
 
         Utils.write_json_file(
@@ -211,7 +213,7 @@ class Utils:
         return response
 
     @staticmethod
-    def generate_translation_model_for_none_ai_translation(translation_text_id: str, root_text_id: str, translation_language: str, translation_base_text: str, translation_text_metadata, person_id: str) -> TranslationPayload:
+    def generate_translation_model_for_none_ai_translation(person_bdrc_id: str, translation_text_id: str, root_text_id: str, translation_language: str, translation_base_text: str, translation_text_metadata, person_id: str) -> TranslationPayload:
 
         # Read the JSON file from pipeline/original_opf/{the_id}.json
         original_opf_path = os.path.join("pipeline", "original_opf", f"{root_text_id}.json")
@@ -227,6 +229,7 @@ class Utils:
             title=translation_text_metadata['title'][translation_language],
             translator=Translator(
                 person_id=person_id,
+                person_bdrc_id=person_bdrc_id
             ),
             original_annotation=[
                 Annotation(
