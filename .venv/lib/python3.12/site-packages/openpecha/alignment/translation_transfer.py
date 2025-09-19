@@ -17,6 +17,10 @@ class TranslationAlignmentTransfer:
     def get_segmentation_ann_path(self, pecha: Pecha) -> Path:
         path = next(pecha.layer_path.rglob("segmentation-*.json"))
         return path
+    
+    def get_alignment_ann_path(self, pecha: Pecha, alignment_id: str) -> Path:
+        path = next(pecha.layer_path.rglob(f"alignment-{alignment_id}.json"))
+        return path
 
     def map_layer_to_layer(
         self, src_layer: AnnotationStore, tgt_layer: AnnotationStore

@@ -1,5 +1,11 @@
 import random
 from uuid import uuid4
+import secrets
+
+
+def generate_id(size: int = 16) -> str:
+    chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz-"
+    return "".join(secrets.choice(chars) for _ in range(size))
 
 
 def get_uuid():
@@ -19,7 +25,7 @@ def get_base_id():
 
 
 def get_layer_id():
-    return get_id("", length=4)
+    return generate_id()
 
 
 def get_initial_pecha_id():
