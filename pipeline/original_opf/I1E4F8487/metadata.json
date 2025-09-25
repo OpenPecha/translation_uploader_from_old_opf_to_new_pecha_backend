@@ -1,0 +1,47 @@
+{
+  "id": "I1E4F8487",
+  "title": {
+    "bo": "འཕགས་པ་ཤེས་རབ་ཀྱི་ཕ་རོལ་ཏུ་ཕྱིན་པ་སྡུད་པ་ཚིགས་སུ་བཅད་པ།",
+    "en": "The Verses Condensing the Perfection of Wisdom",
+    "lzh": "般若波羅蜜多攝頌"
+  },
+  "author": {
+    "bo": "སྟོན་པ་བཅོམ་ལྡན་འདས།"
+  },
+  "imported": "2025-05-19T17:32:21.337191",
+  "source": "http://purl.bdrc.io/resource/WA0RK0013",
+  "toolkit_version": "2.1.12",
+  "parser": "DocxRootParser",
+  "initial_creation_type": "google_docx",
+  "language": "bo",
+  "source_metadata": {
+    "date": null,
+    "source_url": null,
+    "source_type": "docx",
+    "document_id": "1YgJa8bxW6BH1vxTmf9D_vEgj_djsl3h82NL5i_Kmwnc",
+    "presentation": null,
+    "usage_title": null,
+    "long_title": {
+      "bo": "འཕགས་པ་ཤེས་རབ་ཀྱི་ཕ་རོལ་ཏུ་ཕྱིན་པ་ཡོན་ཏན་རིན་པོ་ཆེ་སྡུད་པ།"
+    },
+    "alt_titles": null,
+    "commentary_of": null,
+    "version_of": null,
+    "translation_of": null,
+    "category": null,
+    "bdrc": null
+  },
+  "bases": {},
+  "copyright": {
+    "status": "Unknown",
+    "notice": "",
+    "info_url": null
+  },
+  "licence": "Unknown",
+  "legacy_id": null,
+  "source_file": null,
+  "ocr_import_info": null,
+  "statistics": null,
+  "quality": null,
+  "last_modified": "2025-05-19T17:32:21.337185"
+}
