@@ -51,6 +51,7 @@ class Utils:
         person_ids: Dict[str, str] = PersonUtils.search_person_by_name(person_name=person_name, language=translation_language, all_persons_data=all_persons_data)
 
         person_id = None
+        person_bdrc_id = None
 
         if person_ids is None:
             print(f"Person {person_name} does not exist in the database. Creating a new person.")
@@ -59,6 +60,9 @@ class Utils:
         else:
             person_id = person_ids['id']
             person_bdrc_id = person_ids['bdrc_id']
+
+        print("Person ID -> ", person_id)
+        print("Person BDRC ID -> ", person_bdrc_id)
 
         if person_id is None:
             print("Failed to create a new person. Person ID is none. Translation id: ", translation_text_id)
