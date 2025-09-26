@@ -14,12 +14,14 @@ logging.basicConfig(
     level=logging.INFO
 )
 
+PARENT_MANIFESTATION = "Se0SYpO3OO5xLrtQ"
+
 async def upload_payloads(file_path, filename):
     """
     Uploads the given JSON file to the specified endpoint using HTTP POST.
     Sends the file directly as the request body.
     """
-    endpoint = "https://api-l25bgmwqoa-uc.a.run.app/v2/text/Zx3byc9l0jVQeT1C/translation"
+    endpoint = f"https://api-l25bgmwqoa-uc.a.run.app/v2/text/{PARENT_MANIFESTATION}/translation"
     headers = {
         "Content-Type": "application/json"
     }

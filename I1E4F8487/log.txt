@@ -1,0 +1,16 @@
+((.venv) ) ➜  toolkit-expression-script git:(main) ✗  cd /Users/tenzintsering/Desktop/my-work/pecha/toolkit-expression-script ; /usr/bin/env /Users/tenzint
+sering/Desktop/my-work/pecha/toolkit-expression-script/.venv/bin/python /Users/tenzintsering/.cursor/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bu
+ndled/libs/debugpy/adapter/../../debugpy/launcher 56274 -- /Users/tenzintsering/Desktop/my-work/pecha/toolkit-expression-script/pipeline/uploader.py 
+Uploaded I0510FAEA_payload.json: 
+Uploaded I31FEFC34_payload.json:
+Uploaded I59791995_payload.json: 
+Uploaded I5A5521EA_payload.json: 
+Uploaded I6E04476A_payload.json: 
+Uploaded I74525F99_payload.json: 
+Uploaded I937717B9_payload.json:
+Uploaded IB06B30C8_payload.json: 
+Uploaded IB5019100_payload.json: 
+Uploaded IBABBAA3B_payload.json: 
+Uploaded ID0D3075E_payload.json: 
+Uploaded ID9461A33_payload.json
+Upload complete 12

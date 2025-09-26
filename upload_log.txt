@@ -29,3 +29,61 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 2025-09-09 10:42:07,232 - INFO - HTTP Request: POST https://api-l25bgmwqoa-uc.a.run.app/v2/text/Zx3byc9l0jVQeT1C/translation "HTTP/1.1 500 Internal Server Error"
 2025-09-09 10:42:07,237 - ERROR - Error uploading IFD8648D1_payload.json: Server error '500 Internal Server Error' for url 'https://api-l25bgmwqoa-uc.a.run.app/v2/text/Zx3byc9l0jVQeT1C/translation'
 For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-09-26 09:46:51,756 - INFO - Uploading I0510FAEA_payload.json
+2025-09-26 09:48:47,902 - ERROR - Error uploading I0510FAEA_payload.json: 
+2025-09-26 09:51:52,400 - INFO - Uploading I0510FAEA_payload.json
+2025-09-26 09:52:49,439 - ERROR - Error uploading I0510FAEA_payload.json: 
+2025-09-26 09:52:49,439 - INFO - Uploading I31FEFC34_payload.json
+2025-09-26 09:52:54,708 - ERROR - Error uploading I31FEFC34_payload.json: 
+2025-09-26 09:52:54,708 - INFO - Uploading I59791995_payload.json
+2025-09-26 09:53:00,092 - ERROR - Error uploading I59791995_payload.json: 
+2025-09-26 09:53:00,092 - INFO - Uploading I5A5521EA_payload.json
+2025-09-26 09:53:05,237 - ERROR - Error uploading I5A5521EA_payload.json: 
+2025-09-26 09:53:05,238 - INFO - Uploading I6E04476A_payload.json
+2025-09-26 09:53:10,612 - ERROR - Error uploading I6E04476A_payload.json: 
+2025-09-26 09:53:10,612 - INFO - Uploading I74525F99_payload.json
+2025-09-26 09:53:15,974 - ERROR - Error uploading I74525F99_payload.json: 
+2025-09-26 09:53:15,975 - INFO - Uploading I937717B9_payload.json
+2025-09-26 09:53:21,164 - ERROR - Error uploading I937717B9_payload.json: 
+2025-09-26 09:53:21,164 - INFO - Uploading IB06B30C8_payload.json
+2025-09-26 09:53:26,369 - ERROR - Error uploading IB06B30C8_payload.json: 
+2025-09-26 09:53:26,370 - INFO - Uploading IB5019100_payload.json
+2025-09-26 09:53:32,130 - ERROR - Error uploading IB5019100_payload.json: 
+2025-09-26 09:53:32,130 - INFO - Uploading IBABBAA3B_payload.json
+2025-09-26 09:53:37,605 - ERROR - Error uploading IBABBAA3B_payload.json: 
+2025-09-26 09:53:37,605 - INFO - Uploading ID0D3075E_payload.json
+2025-09-26 09:53:42,853 - ERROR - Error uploading ID0D3075E_payload.json: 
+2025-09-26 09:53:42,853 - INFO - Uploading ID9461A33_payload.json
+2025-09-26 09:53:48,348 - ERROR - Error uploading ID9461A33_payload.json: 
+2025-09-26 10:09:35,526 - INFO - Uploading I082F2688_payload.json
+2025-09-26 10:10:49,885 - ERROR - Error uploading I082F2688_payload.json: 
+2025-09-26 10:10:49,886 - INFO - Uploading I37462762_payload.json
+2025-09-26 10:10:55,310 - ERROR - Error uploading I37462762_payload.json: 
+2025-09-26 10:10:55,310 - INFO - Uploading I38C70694_payload.json
+2025-09-26 10:11:00,644 - ERROR - Error uploading I38C70694_payload.json: 
+2025-09-26 10:11:00,644 - INFO - Uploading I488BE8C9_payload.json
+2025-09-26 10:11:05,138 - INFO - HTTP Request: POST https://api-l25bgmwqoa-uc.a.run.app/v2/text/Se0SYpO3OO5xLrtQ/translation "HTTP/1.1 500 Internal Server Error"
+2025-09-26 10:11:05,144 - ERROR - Error uploading I488BE8C9_payload.json: Server error '500 Internal Server Error' for url 'https://api-l25bgmwqoa-uc.a.run.app/v2/text/Se0SYpO3OO5xLrtQ/translation'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-09-26 10:11:05,144 - INFO - Uploading I4AA14444_payload.json
+2025-09-26 10:11:10,300 - ERROR - Error uploading I4AA14444_payload.json: 
+2025-09-26 10:11:10,300 - INFO - Uploading I4AB6825F_payload.json
+2025-09-26 10:11:15,468 - ERROR - Error uploading I4AB6825F_payload.json: 
+2025-09-26 10:11:15,469 - INFO - Uploading I6EDC50EA_payload.json
+2025-09-26 10:11:20,622 - ERROR - Error uploading I6EDC50EA_payload.json: 
+2025-09-26 10:11:20,623 - INFO - Uploading I97ACE5AC_payload.json
+2025-09-26 10:11:25,795 - ERROR - Error uploading I97ACE5AC_payload.json: 
+2025-09-26 10:11:25,795 - INFO - Uploading I9A3D5522_payload.json
+2025-09-26 10:11:31,266 - ERROR - Error uploading I9A3D5522_payload.json: 
+2025-09-26 10:11:31,266 - INFO - Uploading IAF4F227F_payload.json
+2025-09-26 10:11:36,443 - ERROR - Error uploading IAF4F227F_payload.json: 
+2025-09-26 10:11:36,443 - INFO - Uploading IC49A36AF_payload.json
+2025-09-26 10:11:41,598 - ERROR - Error uploading IC49A36AF_payload.json: 
+2025-09-26 10:11:41,598 - INFO - Uploading ID00CECBA_payload.json
+2025-09-26 10:11:46,963 - ERROR - Error uploading ID00CECBA_payload.json: 
+2025-09-26 10:11:46,963 - INFO - Uploading ID551AE7C_payload.json
+2025-09-26 10:11:52,378 - ERROR - Error uploading ID551AE7C_payload.json: 
+2025-09-26 10:15:16,743 - INFO - Uploading I488BE8C9_payload.json
+2025-09-26 10:15:32,915 - INFO - HTTP Request: POST https://api-l25bgmwqoa-uc.a.run.app/v2/text/Se0SYpO3OO5xLrtQ/translation "HTTP/1.1 500 Internal Server Error"
+2025-09-26 10:15:35,824 - ERROR - Error uploading I488BE8C9_payload.json: Server error '500 Internal Server Error' for url 'https://api-l25bgmwqoa-uc.a.run.app/v2/text/Se0SYpO3OO5xLrtQ/translation'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500

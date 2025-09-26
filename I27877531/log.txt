@@ -1,0 +1,19 @@
+((.venv) ) ➜  toolkit-expression-script git:(main) ✗  cd /Users/tenzintsering/Desktop/my-work/pecha/toolkit-expression-script ; /usr/bin/env /Users/tenzint
+sering/Desktop/my-work/pecha/toolkit-expression-script/.venv/bin/python /Users/tenzintsering/.cursor/extensions/ms-python.debugpy-2025.10.0-darwin-arm64/bu
+ndled/libs/debugpy/adapter/../../debugpy/launcher 60238 -- /Users/tenzintsering/Desktop/my-work/pecha/toolkit-expression-script/pipeline/uploader.py 
+Uploaded I082F2688_payload.json: 
+Uploaded I37462762_payload.json: 
+Uploaded I38C70694_payload.json: 
+Uploading I488BE8C9_payload.json:
+Error uploading I488BE8C9_payload.json: Server error '500 Internal Server Error' for url 'https://api-l25bgmwqoa-uc.a.run.app/v2/text/Se0SYpO3OO5xLrtQ/translation'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+Uploaded I4AA14444_payload.json: 
+Uploaded I4AB6825F_payload.json: 
+Uploaded I6EDC50EA_payload.json: 
+Uploaded I97ACE5AC_payload.json: 
+Uploaded I9A3D5522_payload.json: 
+Uploaded IAF4F227F_payload.json:
+Uploaded IC49A36AF_payload.json:
+Uploaded ID00CECBA_payload.json: 
+Uploaded ID551AE7C_payload.json:
+Upload complete 12
